@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ViewPractice</string>
+
+    <string name="view_title_basic">基础</string>
+    <string name="view_title_paint">Paint</string>
+    <string name="view_title_text">文字</string>
+    <string name="view_title_canvas">Canvas</string>
+    <string name="view_title_order">绘制顺序</string>
 </resources>

@@ -7,10 +7,12 @@ package com.gx.viewpractice;
 public class EffectItem {
     private String name;
     private int count;
+    private Class cls;
 
-    public EffectItem(String name, int count) {
+    public EffectItem(String name, int count, Class cls) {
         this.name = name;
         this.count = count;
+        this.cls = cls;
     }
 
     public String getName() {
@@ -27,5 +29,13 @@ public class EffectItem {
 
     public void setCount(int count) {
         this.count = count;
+    }
+
+    public Class getCls() {
+        return cls;
+    }
+
+    public void setCls(Class cls) {
+        this.cls = cls;
     }
 }
