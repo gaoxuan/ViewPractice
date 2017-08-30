@@ -1,6 +1,5 @@
 package com.gx.viewpractice.view;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -40,7 +39,7 @@ public class ViewActivity extends AppCompatActivity {
 
     private SimpleFragmentAdapter adapter;
     private List<Fragment> fragmentList;
-    private ViewFragmentFactory bascFragment;
+    private ViewFragmentFactory basicFragment;
     private ViewFragmentFactory paintFragment;
     private ViewFragmentFactory textFragment;
     private ViewFragmentFactory canvasFragment;
@@ -117,12 +116,12 @@ public class ViewActivity extends AppCompatActivity {
 
     private void initData() {
         fragmentList = new ArrayList<>();
-        bascFragment = ViewFragmentFactory.getInstance(ViewFragmentFactory.TYPE_BASIC);
+        basicFragment = ViewFragmentFactory.getInstance(ViewFragmentFactory.TYPE_BASIC);
         paintFragment = ViewFragmentFactory.getInstance(ViewFragmentFactory.TYPE_PAINT);
         textFragment = ViewFragmentFactory.getInstance(ViewFragmentFactory.TYPE_TEXT);
         canvasFragment = ViewFragmentFactory.getInstance(ViewFragmentFactory.TYPE_CANVAS);
         orderFragment = ViewFragmentFactory.getInstance(ViewFragmentFactory.TYPE_ORDER);
-        fragmentList.add(bascFragment);
+        fragmentList.add(basicFragment);
         fragmentList.add(paintFragment);
         fragmentList.add(textFragment);
         fragmentList.add(canvasFragment);
